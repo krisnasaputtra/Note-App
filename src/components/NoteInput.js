@@ -40,11 +40,11 @@ export default class NoteInput extends React.Component {
     return (
       <div>
         <form className="note-input" onSubmit={this.onSubmitHandler}>
-          <p className="note-input__title__char-limit">Sisa Karakter: {this.state.remainingCharacter}</p>
-          <input type="text" className="note-input__title" value={this.state.title} onChange={this.onTitleChangeHandler} placeholder="Judul Catatan" required />
-          <textarea className="note-input__body" value={this.state.body} onChange={this.onBodyChangeHandler} placeholder="Tulis Catatanmu disini..." required></textarea>
+          <p className="note-input__title__char-limit">Remaining Character: {this.state.remainingCharacter}</p>
+          <input type="text" className="note-input__title" value={this.state.title} onChange={this.onTitleChangeHandler} placeholder="Note Title" required />
+          <textarea className="note-input__body" value={this.state.body} onChange={this.onBodyChangeHandler} placeholder="Write your Note..." required></textarea>
           <button type="submit" className="note-input__button">
-            Tambah
+            <p>Add Note</p>
           </button>
         </form>
       </div>

@@ -33,7 +33,6 @@ textarea::placeholder {
   justify-content: center;
   padding: 4px 16px;
   border-bottom: 1px solid #aaa;
-  text-align: center;
 }
 
 .note-app__header h1 {
@@ -91,11 +90,6 @@ textarea::placeholder {
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
-}
-.note-search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .notes-list {
   display: grid;
