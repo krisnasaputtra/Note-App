@@ -35,6 +35,14 @@ export default class NoteInput extends React.Component {
   onSubmitHandler(e) {
     e.preventDefault();
     this.props.addNote(this.state);
+    this.setState(() => {
+      return {
+        title: "",
+        body: "",
+        maxLength: 50,
+        remainingCharacter: 50,
+      };
+    });
   }
   render() {
     return (
